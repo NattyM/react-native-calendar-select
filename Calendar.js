@@ -236,7 +236,10 @@ export default class Calendar extends Component {
       <Modal
         animationType={'slide'}
         visible={this.state.isModalVisible}
-        onRequestClose={this.close}>
+        onRequestClose={this.close}
+        onBackdropPress={hideModal}
+        transparent
+        >
         <View style={[styles.container, mainBack]}>
           <View style={styles.ctrl}>
             <TouchableHighlight
