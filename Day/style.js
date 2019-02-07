@@ -10,7 +10,7 @@ if (mod) {
 }
 export default StyleSheet.create({
   dayContainer: {
-    width: dayWidth,
+    width: dayWidth * 0.5,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -27,9 +27,9 @@ export default StyleSheet.create({
     borderColor: 'rgba(255, 255, 255, 0.40)'
   },
   day: {
-    width: dayWidth,
-    height: dayWidth,
-    borderRadius: dayWidth / 2,
+    width: dayWidth * 0.5,
+    height: dayWidth * 0.5,
+    borderRadius: (dayWidth * 0.5) / 2,
     overflow: 'hidden',
     justifyContent: 'center',
     alignItems: 'center'
